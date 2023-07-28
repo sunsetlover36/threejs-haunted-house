@@ -17,7 +17,7 @@ export const getGhostPos = (i, elapsedTime) => {
     ],
     [
       Math.cos(angle) * (7 + Math.sin(elapsedTime * 0.32)),
-      Math.sin(elapsedTime * 4) + Math.sin(elapsedTime * 2.5),
+      Math.sin(elapsedTime * 5) + Math.sin(elapsedTime * 2.5),
       Math.sin(angle) * (7 + Math.sin(elapsedTime * 0.5)),
     ],
   ];
