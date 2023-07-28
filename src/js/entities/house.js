@@ -32,7 +32,7 @@ house.add(roof);
 
 // Door
 const door = new THREE.Mesh(
-  new THREE.PlaneGeometry(2.2, 2.2, 100, 100),
+  new THREE.PlaneGeometry(HOUSE_PARAMS.doorSize, HOUSE_PARAMS.doorSize, 100, 100),
   new THREE.MeshStandardMaterial({
     transparent: true,
     displacementScale: 0.1,
@@ -50,7 +50,7 @@ door.position.z = 2 - 0.0175;
 const doorLight = new THREE.PointLight(COLORS.coral, 1, 7);
 doorLight.castShadow = true;
 optimizeShadow(doorLight);
-doorLight.position.set(0, HOUSE_PARAMS.wallsHeight - 0.1, 2.7);
+doorLight.position.set(0, HOUSE_PARAMS.wallsHeight - 0.1, HOUSE_PARAMS.doorSize + 0.5);
 
 house.add(door, doorLight);
 

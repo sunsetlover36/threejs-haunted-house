@@ -19,6 +19,7 @@ export const HOUSE_PARAMS = {
   houseWidth: 4,
   wallsHeight: 2.75,
   roofHeight: 1,
+  doorSize: 2.2,
 };
 
 export const GHOST_ANGLES = [0.5, -0.32, -0.18];
