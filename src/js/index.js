@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Canvas
   const canvas = document.getElementById('webgl');
   const controls = new OrbitControls(camera, canvas);
+  controls.maxPolarAngle = Math.PI / 2 - 0.03;
   controls.enableDamping = true;
 
   // Renderer
