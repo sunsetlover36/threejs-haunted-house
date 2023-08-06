@@ -14,10 +14,6 @@ const walls = new THREE.Mesh(
   new THREE.MeshStandardMaterial(textures.bricks)
 );
 walls.castShadow = true;
-walls.geometry.setAttribute(
-  'uv2',
-  new THREE.Float32BufferAttribute(walls.geometry.attributes.uv.array, 2)
-);
 walls.position.y = HOUSE_PARAMS.wallsHeight / 2;
 house.add(walls);
 
@@ -38,10 +34,6 @@ const door = new THREE.Mesh(
     displacementScale: 0.1,
     ...textures.door,
   })
-);
-door.geometry.setAttribute(
-  'uv2',
-  new THREE.Float32BufferAttribute(door.geometry.attributes.uv.array, 2)
 );
 door.position.y = 1;
 door.position.z = 2 - 0.0175;
