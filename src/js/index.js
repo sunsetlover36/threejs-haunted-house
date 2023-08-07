@@ -2,12 +2,13 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import screenfull from 'screenfull';
 
-import '../css/style.css';
 import { getGhostPos } from './helpers';
 import { COLORS, SIZES } from './constants';
 import { scene } from './scene';
 import { ghosts } from './entities';
+
 import './gui';
+import '../css/style.css';
 
 THREE.ColorManagement.enabled = false;
 
